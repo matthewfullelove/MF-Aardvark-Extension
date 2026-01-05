@@ -20,8 +20,8 @@ h_ang = plot_trajectory(theta_high, s_good, y0, D, '--');
 h_spd = plot_trajectory(theta_good, s_high, y0, D, '-.');
 
 set(h_opt,'LineWidth',2)
-set(h_ang,'LineWidth',1.5)
-set(h_spd,'LineWidth',1.5)
+set(h_ang,'LineWidth',2)
+set(h_spd,'LineWidth',2)
 
 %% Axes & labels
 axis equal
@@ -42,3 +42,4 @@ set([hx hy],'FontSize',12)
 exportgraphics(gcf,'trajectory_comparison.pdf', ...
     'ContentType','vector', ...
     'BackgroundColor','none');
+

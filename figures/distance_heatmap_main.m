@@ -36,7 +36,7 @@ thetaGridDeg = rad2deg(thetaGrid);
 theta0_bestDeg = rad2deg(theta0_best);
 
 %% Plot heatmap
-figure('Units','inches','Position',[1 1 5 2.8]);
+figure('Units','inches','Position',[1 1 4.5 2.52]);
 
 imagesc(thetaGridDeg, sGrid, distances)
 set(gca,'YDir','normal')
@@ -99,3 +99,4 @@ fprintf('  dist   = %.4f\n', maxDist);
 exportgraphics(gcf, 'distance_heatmap.pdf', ...
      'ContentType','vector', ...
      'BackgroundColor','none');
+

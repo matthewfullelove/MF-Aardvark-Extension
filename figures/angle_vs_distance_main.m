@@ -31,7 +31,7 @@ thetaDeg    = rad2deg(thetaVals);
 thetaOptDeg = rad2deg(thetaOpt);
 
 %% Plot
-figure('Units','inches','Position',[1 1 5 2.8]);
+figure('Units','inches','Position',[1 1 4.5 2.52]);
 
 plot(thetaDeg, ranges, 'k-', 'LineWidth', 1.6)
 hold on
@@ -66,3 +66,4 @@ ylim([ranges(end) maxRange + 0.2])
 exportgraphics(gcf, 'distance_vs_angle.pdf', ...
      'ContentType','vector', ...
      'BackgroundColor','none');
+

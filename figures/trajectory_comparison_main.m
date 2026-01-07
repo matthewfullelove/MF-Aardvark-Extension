@@ -11,7 +11,7 @@ y0 = 1;
 D  = 0.25;
 
 %% Figure 
-figure('Units','inches','Position',[1 1 6 2.8],'Color','w');
+figure('Units','inches','Position',[1 1 5.4 2.52],'Color','w');
 hold on
 
 %% Plot trajectories
@@ -42,4 +42,5 @@ set([hx hy],'FontSize',12)
 exportgraphics(gcf,'trajectory_comparison.pdf', ...
     'ContentType','vector', ...
     'BackgroundColor','none');
+
 
